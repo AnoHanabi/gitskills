@@ -46,7 +46,9 @@ git branch --set-upstream-t=origin/<branch-name> <branch-name>
 
 git tag -a <name> -m <message>
 git tag
+git tag <name> <commit id>
 git show <name>
-git push origin --tag
+git push origin <name>
+git push origin --tags
 git tag -d <name>
 git push origin :refs/tags/<name>
