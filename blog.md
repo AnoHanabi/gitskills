@@ -32,3 +32,8 @@ git log --graph
 
 git merge --no-ff -m "xxx" dev
 
+git stash
+git stash list
+git stash apply/pop stash@{num}
+
+
