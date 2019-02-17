@@ -38,3 +38,7 @@ git stash apply/pop stash@{num}
 
 git branch -D feature
 
+git remote -v
+git push origin branch-name
+git pull
+git branch --set-upstream-t=origin/<branch-name> <branch-name> 
