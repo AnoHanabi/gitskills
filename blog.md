@@ -54,3 +54,5 @@ git tag -d <name>
 git push origin :refs/tags/<name>
 
 git clone git@server-name:path/repo-name.git
+
+.gitignore
