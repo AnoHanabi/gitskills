@@ -52,3 +52,5 @@ git push origin <name>
 git push origin --tags
 git tag -d <name>
 git push origin :refs/tags/<name>
+
+git clone git@server-name:path/repo-name.git
