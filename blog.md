@@ -36,4 +36,5 @@ git stash
 git stash list
 git stash apply/pop stash@{num}
 
+git branch -D feature
 
