@@ -27,6 +27,7 @@ git checkout -b dev
 git branch
 git merge dev
 git branch -d dev
+git push origin --delete dev
 
 git log --graph
 
