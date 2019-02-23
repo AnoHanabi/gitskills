@@ -1,7 +1,6 @@
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 
-将当前目录变成Git可管理：`git init`
-
+将当前目录变成Git可管理：`git init`<br>
 推荐`UTF-8编码`&`Notepad++`，拒绝`Windows记事本`<br>
 添加文件：`git add <flie>`
 
