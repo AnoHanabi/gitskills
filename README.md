@@ -1,5 +1,5 @@
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
-#GIT教程
+# GIT教程
 ## GIT简介
 ### 安装GIT
 将当前目录变成Git可管理：`git init`<br>
@@ -10,7 +10,7 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 添加提交说明：`git commit -m "xxx"`<br>
 拓展:`add+commit=git commit -am "xxx"`
 
-##时光机穿梭
+## 时光机穿梭
 ### 状态查看
 查看工作区状态：`git status`<br>
 查看修改内容：`git diff <file>`
@@ -37,7 +37,7 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 ### 克隆远程库
 克隆远程库：`git clone git@server-name:path/repo-name.git`
 
-##分支管理
+## 分支管理
 ### 管理分支
 创建+切换分支：`git checkout -b <name>`<br>
 查看分支：`git branch`<br>
