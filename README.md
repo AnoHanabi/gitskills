@@ -38,7 +38,7 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 克隆远程库：`git clone git@server-name:path/repo-name.git`
 
 ## 分支管理
-### 管理分支
+### 操作分支
 创建+切换分支：`git checkout -b <name>`<br>
 查看分支：`git branch`<br>
 合并某分支到当前分支：`git merge <name>`<br>
@@ -48,29 +48,37 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 ### 解决冲突
 分支合并图：`git log --graph`
 
-`git merge --no-ff -m "xxx" dev`
+###  分支管理策略
+合并分支并描述：`git merge --no-ff -m "xxx" <name>`
 
-`git stash`
-`git stash list`
-`git stash apply/pop stash@{num}`
+### Bug分支
+储存现场：`git stash`<br>
+查看现场信息：`git stash list`<br>
+恢复现场，不删stash/删stash:`git stash apply/pop stash@<num>`
 
-`git branch -D feature`
+### 删除分支拓展
+强行删除分支：`git branch -D feature`
 
-`git remote -v`
-`git checkout -b branch-name origin/branch-name`
-`git push origin branch-name`
-`git pull`
-`git branch --set-upstream-t=origin/<branch-name> <branch-name> `
+### 多人协作
+查看远程库：`git remote -v`<br>
+创建和远程同名的本地分支：`git checkout -b <branch-name> origin/<branch-name>`<br>
+本地推送分支:`git push origin <branch-name>`<br>
+抓取远程库：`git pull`<br>
+创建本地和远程分支的链接关系：`git branch --set-upstream-t=origin/<branch-name> <branch-name> `
 
-`git tag -a <name> -m <message>`
-`git tag`
-`git tag <name> <commit id>`
-`git show <name>`
-`git push origin <name>`
-`git push origin --tags`
-`git tag -d <name>`
-`git push origin :refs/tags/<name>`
+## 标签管理
+### 创建标签
+创建标签并留言：`git tag -a <name> -m <message>`<br>
+查看标签：`git tag`<br>
+给对应提交打标签：`git tag <name> <commit id>`<br>
+查看标签信息：`git show <name>`
 
-`git clone git@server-name:path/repo-name.git`
+### 操作标签
+推送标签到远程：`git push origin <name>`<br>
+一次性推送所有标签到远程：`git push origin --tags`<br>
+删除本地标签：`git tag -d <name>`<br>
+删除远程标签：`git push origin :refs/tags/<name>`
 
-`.gitignore`
+## 自定义GIT
+### 忽略特殊文件 
+在仓库目录下创建文件：`.gitignore`
